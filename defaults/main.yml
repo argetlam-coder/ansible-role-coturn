@@ -31,6 +31,12 @@ coturn_version: 4.18.0
 coturn_uid: ""
 coturn_gid: ""
 
+# Controls the user that the container runs as. Set to `0` to run as root.
+coturn_container_uid: "{{ coturn_uid }}"
+
+# Controls the group that the container runs as. Set to `0` to run as root.
+coturn_container_gid: "{{ coturn_gid }}"
+
 # The hostname at which coturn is served.
 coturn_hostname: ""
 
